@@ -1,1 +1,1 @@
-#NEOVIM Config
+# NEOVIM Config
