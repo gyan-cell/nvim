@@ -1,6 +1,6 @@
-# Oblivion - Simple and Minimal NeoVim Config
+# Oblivion-vim - Simple and Minimal NeoVim Config
 
-Oblivion is a lightweight and minimal NeoVim configuration written in Lua. It aims to provide essential features for a smooth and efficient coding experience, including LSP (Language Server Protocol), TreeSitter, file tree navigation, and GitHub Copilot-like code assistance.
+Oblivion-vim is a lightweight and minimal NeoVim configuration written in Lua. It aims to provide essential features for a smooth and efficient coding experience, including LSP (Language Server Protocol), TreeSitter, file tree navigation, and GitHub Copilot-like code assistance.
 
 ## Features
 - **LSP Integration**: Seamless integration with Language Server Protocol for intelligent code completion, diagnostics, and more.
@@ -9,9 +9,9 @@ Oblivion is a lightweight and minimal NeoVim configuration written in Lua. It ai
 - **GitHub Copilot Support**: Enjoy code assistance similar to GitHub Copilot for improved productivity.
 
 ## Installation
-To use Oblivion, follow these simple steps:
+To use Oblivion-vim, follow these simple steps:
 
-1. Clone the Oblivion repository:
+1. Clone the Oblivion-vim repository:
    ```
    git clone https://github.com/yourusername/Oblivion.git ~/.config/nvim
    ```
@@ -23,7 +23,7 @@ To use Oblivion, follow these simple steps:
    ```
 
 ## Setup
-To customize Oblivion according to your preferences, modify the `init.lua` file located in `~/.config/nvim`.
+To customize Oblivion-vim according to your preferences, modify the `init.lua` file located in `~/.config/nvim`.
 
 ### Available Options:
 - Adjust key mappings.
