@@ -2,14 +2,6 @@
 
 Oblivion-vim is a lightweight and minimal NeoVim configuration written in Lua. It aims to provide essential features for a smooth and efficient coding experience, including LSP (Language Server Protocol), TreeSitter, file tree navigation, and GitHub Copilot-like code assistance.
 
-## Features
-- **LSP Integration**: Seamless integration with Language Server Protocol for intelligent code completion, diagnostics, and more.
-- **TreeSitter**: Advanced syntax highlighting and code analysis for enhanced readability and navigation.
-- **File Tree**: Convenient file tree navigation for easy project exploration.
-- **Codeium Support**: Enjoy code assistance similar to GitHub Copilot for improved productivity.
-- **Harpoon Integration**: Significantly decreases the time To Switch between the Files .
-- **Telescope Integration**: For Better Navigation between Files With The Help Of Fuzzy Finder.
-- **And Many More.**
 
 ## Installation
 To use Oblivion-vim, follow these simple steps:
@@ -28,12 +20,11 @@ To use Oblivion-vim, follow these simple steps:
  
    ```
    git clone https://github.com/gyan-cell/nvim
+
    ```
 
-## Setup
-All The Necessary Plugins and lsp Will Be Automatically installed after Neovim is Opened for the first time .
 
-### Supported Languages:
+## Supported Languages:
 - html .
 - css And tailwindcss.
 - javascript|Typescript.
@@ -41,6 +32,19 @@ All The Necessary Plugins and lsp Will Be Automatically installed after Neovim i
 - python.
 - rust.
 - Java
+
+
+## Setup
+All The Necessary Plugins and lsp Will Be Automatically installed after Neovim is Opened for the first time .
+
+## Features
+- **LSP Integration**: Seamless integration with Language Server Protocol for intelligent code completion, diagnostics, and more.
+- **TreeSitter**: Advanced syntax highlighting and code analysis for enhanced readability and navigation.
+- **File Tree**: Convenient file tree navigation for easy project exploration.
+- **Codeium Support**: Enjoy code assistance similar to GitHub Copilot for improved productivity.
+- **Harpoon Integration**: Significantly decreases the time To Switch between the Files .
+- **Telescope Integration**: For Better Navigation between Files With The Help Of Fuzzy Finder.
+- **And Many More.**
 
 ## Demo Images
 
