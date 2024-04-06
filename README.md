@@ -26,7 +26,7 @@ To use Oblivion-vim, follow these simple steps:
 ## Supported Languages:
 - html .
 - css And tailwindcss.
-- javascript|Typescript.
+- javascript And Typescript.
 - c And c++.
 - python.
 - rust.
