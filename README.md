@@ -6,43 +6,57 @@ Oblivion-vim is a lightweight and minimal NeoVim configuration written in Lua. I
 - **LSP Integration**: Seamless integration with Language Server Protocol for intelligent code completion, diagnostics, and more.
 - **TreeSitter**: Advanced syntax highlighting and code analysis for enhanced readability and navigation.
 - **File Tree**: Convenient file tree navigation for easy project exploration.
-- **GitHub Copilot Support**: Enjoy code assistance similar to GitHub Copilot for improved productivity.
+- **Codeium Support**: Enjoy code assistance similar to GitHub Copilot for improved productivity.
+- **Harpoon Integration**: Significantly decreases the time To Switch between the Files .
+- **Telescope Integration**: For Better Navigation between Files With The Help Of Fuzzy Finder.
+- **And Many More.**
 
 ## Installation
 To use Oblivion-vim, follow these simple steps:
+1. Delete Old Config completely
+   ```
+   rm -rf ~/.config/nvim
+   rm -rf ~/.local/share/nvim
+   ```
 
-1. Clone the Oblivion-vim repository:
+2. Change The active working directory by:
    ```
-   git clone https://github.com/yourusername/Oblivion.git ~/.config/nvim
+   cd  ~/.config/nvim
    ```
 
-2. Install required plugins:
-   Open NeoVim and run the following command:
+3. Clone The Repo:
+ 
    ```
-   :PackerInstall
+   git clone https://github.com/gyan-cell/nvim
    ```
 
 ## Setup
-To customize Oblivion-vim according to your preferences, modify the `init.lua` file located in `~/.config/nvim`.
+All The Necessary Plugins and lsp Will Be Automatically installed after Neovim is Opened for the first time .
 
-### Available Options:
-- Adjust key mappings.
-- Add or remove plugins.
-- Customize LSP configurations.
-- Fine-tune TreeSitter settings.
+### Supported Languages:
+- html .
+- css And tailwindcss.
+- javascript|Typescript.
+- c And c++.
+- python.
+- rust.
+- Java
 
 ## Demo Images
 
 ![Screenshot of After Opening setup](https://github.com/gyan-cell/nvim/blob/master/images/demo0.jpeg)
-![Screenshot of IDE](images/demo1.jpeg)
 
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
 
 ## Contributions
 Contributions are welcome! Feel free to open an issue or submit a pull request.
 
 ## Acknowledgments
 Special thanks to the NeoVim community and the creators of the plugins used in this configuration.
+Shout Out To The Primegan and josean-dev We Reffered Their Youtube Channel To make This Repo.
+https://github.com/ThePrimeagen/
 
----
+
+https://github.com/josean-dev             
+
+
