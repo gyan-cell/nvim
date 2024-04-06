@@ -6,7 +6,7 @@ return {
     vim.g.loaded_netrw = 1
     vim.g.loaded_netrwPlugin = 1
 
-    -- optionally enable 24-bit colour
+    -- enable 24-bit colour
     vim.opt.termguicolors = true
 
     -- empty setup using defaults
@@ -20,7 +20,6 @@ return {
       },
       renderer = {
         root_folder_modifier = ":t",
-        -- These icons are visible when you install web-devicons
         icons = {
           glyphs = {
             default = "",

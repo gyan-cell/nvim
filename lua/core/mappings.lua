@@ -1,5 +1,4 @@
 vim.g.mapleader = " " -- This Is Our Leader Key
-vim.keymap.set("n", "<leader>-", vim.cmd.Ex)
 vim.keymap.set("n", "<leader>e", vim.cmd.NvimTreeToggle)
 local map = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
