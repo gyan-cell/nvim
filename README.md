@@ -30,7 +30,9 @@ To use Oblivion-vim, follow these simple steps:
 - c And c++.
 - python.
 - rust.
-- Java
+- Java.
+- lua.
+- prisma.
 
 
 ## Setup
