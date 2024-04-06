@@ -11,16 +11,15 @@ To use Oblivion-vim, follow these simple steps:
    rm -rf ~/.local/share/nvim
    ```
 
-2. Change The active working directory by:
+4. Change The active working directory by:
    ```
    cd  ~/.config/nvim
    ```
 
-3. Clone The Repo:
+5. Clone The Repo:
  
    ```
    git clone https://github.com/gyan-cell/nvim
-
    ```
 
 
