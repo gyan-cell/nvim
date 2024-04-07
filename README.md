@@ -4,6 +4,7 @@ Oblivion-vim is a lightweight and minimal NeoVim configuration written in Lua. I
 
 
 ## Installation
+First make sure You Have nodejs and npm installed And Neovim version is greater than 9.
 To use Oblivion-vim, follow these simple steps:
 1. Delete Old Config completely
    ```
