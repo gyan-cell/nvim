@@ -14,7 +14,7 @@ To use Oblivion-vim, follow these simple steps:
 
 4. Change The active working directory by:
    ```
-   cd  ~/.config/nvim
+   cd  ~/.config/
    ```
 
 5. Clone The Repo:
