@@ -44,3 +44,13 @@ map('n', '<Space>bw', '<Cmd>BufferOrderByWindowNumber<CR>', opts)
 -- Other:
 -- :BarbarEnable - enables barbar (enabled by default)
 -- :BarbarDisable - very bad command, should never be used
+-- splits
+
+map('n', '<leader>v', ':<Cmd>vsplit<CR>', opts)
+map('n', '<leader>h', ':<Cmd>split<CR>', opts)
+
+-- Navigation
+map('n', '<C-h>', '<C-w>l', opts)
+map('n', '<C-l>', '<C-w>h', opts)
+map('n', '<C-t>', '<C-w>k', opts)
+map('n', '<C-d>', '<C-w>j', opts)
