@@ -45,14 +45,45 @@ return {
       })
 
       require('mason-lspconfig').setup({
-        ensure_installed = { 'ts_ls', 'rust_analyzer', 'clangd', 'pyright', 'lua_ls', 'jdtls', 'cssls', 'tailwindcss', 'prismals', 'html' },
+        ensure_installed = {
+          'ts_ls', 'rust_analyzer', 'clangd', 'pyright', 'lua_ls',
+          'jdtls', 'cssls', 'tailwindcss', 'prismals', 'html', "gopls"
+        },
         handlers = {
           lsp_zero.default_setup,
           lua_ls = function()
-            -- (Optional) Configure lua language server for neovim
             local lua_opts = lsp_zero.nvim_lua_ls()
             require('lspconfig').lua_ls.setup(lua_opts)
           end,
+          jdtls = function()
+            local home = os.getenv("HOME")
+            local jdtls_path = home .. "/.local/share/nvim/mason/packages/jdtls"
+            local launcher = vim.fn.glob(jdtls_path .. "/plugins/org.eclipse.equinox.launcher_*.jar")
+            local config = jdtls_path .. "/config_linux"
+            local workspace = home .. "/.cache/jdtls/workspace"
+
+            require('lspconfig').jdtls.setup {
+              cmd = {
+                "java",
+                "-Declipse.application=org.eclipse.jdt.ls.core.id1",
+                "-Dosgi.bundles.defaultStartLevel=4",
+                "-Declipse.product=org.eclipse.jdt.ls.core.product",
+                "-Dlog.protocol=true",
+                "-Dlog.level=ALL",
+                "-Xms1g",
+                "--add-modules=ALL-SYSTEM",
+                "--add-opens", "java.base/java.util=ALL-UNNAMED",
+                "--add-opens", "java.base/java.lang=ALL-UNNAMED",
+                "-jar", launcher,
+                "-configuration", config,
+                "-data", workspace,
+              },
+              root_dir = require('lspconfig').util.root_pattern(
+                ".git", "mvnw", "gradlew", "pom.xml", "build.gradle"
+              ),
+              filetypes = { "java" },
+            }
+          end
         }
       })
     end
