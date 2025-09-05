@@ -2,7 +2,7 @@ vim.opt.backspace = '2'
 vim.opt.showcmd = true
 vim.opt.laststatus = 2
 vim.opt.autowrite = true -- save the file before leaving if changed
-vim.opt.autoread = true -- auto load file changes occured outside vim
+vim.opt.autoread = true  -- auto load file changes occured outside vim
 -- use spaces for tabs and whatnot
 vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2
@@ -105,3 +105,5 @@ if vim.g.neovide then
 end
 
 
+vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
