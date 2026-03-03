@@ -54,3 +54,17 @@ map('n', '<C-h>', '<C-w>l', opts)
 map('n', '<C-l>', '<C-w>h', opts)
 map('n', '<C-t>', '<C-w>k', opts)
 map('n', '<C-d>', '<C-w>j', opts)
+
+
+vim.diagnostic.config({
+  virtual_text = true,
+  signs = true,
+  underline = true,
+  update_in_insert = false,
+})
+
+-- Updated keymaps
+vim.keymap.set('n', '<leader>d', vim.diagnostic.open_float, { desc = 'Show diagnostic' })
+vim.keymap.set('n', '<leader>p', function() vim.diagnostic.jump({ count = -1 }) end, { desc = 'Prev diagnostic' })
+vim.keymap.set('n', '<leader>n', function() vim.diagnostic.jump({ count = 1 }) end, { desc = 'Next diagnostic' })
+vim.keymap.set('n', '<leader>l', vim.diagnostic.setloclist, { desc = 'List diagnostics' })
