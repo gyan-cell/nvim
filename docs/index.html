@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kaumudi Vim - Moonlight for your Editor</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="A fast, fully transparent, and modern Neovim configuration built on Neovim 0.12+ native APIs. Minimalist, premium aesthetics, and complete out-of-the-box language support.">
+  <meta name="keywords" content="neovim, neovim config, lua, kaumudi, kaumudi-vim, editor config, lsp, treesitter, terminal transparency">
+  <meta name="author" content="Gyanranjan Jha">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Kaumudi Vim - Moonlight for your Editor">
+  <meta property="og:description" content="A fast, fully transparent, and modern Neovim configuration built on Neovim 0.12+ native APIs.">
+  <meta property="og:image" content="images/demo1.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Styling -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Background Decorative Blurs -->
+  <div class="glow-orb orb-1"></div>
+  <div class="glow-orb orb-2"></div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar" id="main-nav">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <span class="logo-symbol">/</span>
+        <span class="logo-text">Kaumudi<span class="accent">.vim</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#install">Install</a></li>
+        <li><a href="#themes">Themes</a></li>
+        <li><a href="#keybindings">Keymaps</a></li>
+        <li><a href="#creator">Creator</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="theme-toggle-btn" class="theme-toggle" aria-label="Toggle visual theme">
+          <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+        <a href="https://github.com/gyan-cell/nvim" target="_blank" rel="noopener noreferrer" class="btn btn-nav">
+          <svg class="icon" viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          GitHub
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero-section">
+    <div class="hero-container">
+      <div class="hero-badge">KAUMUDI - MOONLIGHT FOR YOUR EDITOR</div>
+      <h1 class="hero-title">Elevate Your Coding <br><span class="gradient-text">Into Moonlight</span></h1>
+      <p class="hero-subtitle">A blazing fast, fully transparent Neovim configuration crafted carefully on native APIs. Designed for developers who love minimalism and premium aesthetics.</p>
+      
+      <div class="hero-ctas">
+        <a href="#install" class="btn btn-primary">Quick Install</a>
+        <a href="#themes" class="btn btn-secondary">Explore Themes</a>
+      </div>
+      
+      <!-- Premium Mockup Preview -->
+      <div class="hero-preview-container">
+        <div class="macbook-frame">
+          <div class="macbook-screen">
+            <img src="images/demo1.png" alt="Kaumudi Vim Editor Mockup" class="mockup-img" id="hero-showcase-img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Key Features Grid -->
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Engineered to Perfection</h2>
+        <p class="section-desc">We swapped clunky legacy shims with modern native configurations. Here is what makes Kaumudi feel so premium.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">LSP</div>
+          <h3>Native Neovim 0.12 APIs</h3>
+          <p>Driven by native <code>vim.lsp.config()</code> and <code>vim.lsp.enable()</code>, bypassing old plugin bloat for lightning startup and attachments.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">OPN</div>
+          <h3>True Transparency</h3>
+          <p>Every floating window, borders, menus, and file trees are completely transparent. Matches any gorgeous desktop style setup perfectly.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">PKG</div>
+          <h3>42 Curated Plugins</h3>
+          <p>No useless extensions. Only top-tier integrations including Treesitter, Telescope, Harpoon, Barbar, Lualine, and Conform.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">FMT</div>
+          <h3>Auto-Format & Lint</h3>
+          <p>Out-of-the-box auto-formatting via Conform.nvim and fast diagnostics through nvim-lint with lazy installation hooks.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">CPT</div>
+          <h3>Codeium AI Ready</h3>
+          <p>Integrates code suggestions out of the box with light keys. Fast, smart autocomplete right at your cursor.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">KB</div>
+          <h3>Responsive UX</h3>
+          <p>Smooth mappings, custom floating terminal toggles, undo history tree visualization, and dynamic session saving.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Installation Steps -->
+  <section class="section section-alt" id="install">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">One-Command Bootstrap</h2>
+        <p class="section-desc">Up and running in less than 60 seconds. Make sure to back up your old configuration first.</p>
+      </div>
+
+      <div class="install-steps-container">
+        <div class="install-step">
+          <div class="step-num">01</div>
+          <div class="step-content">
+            <h3>Backup Existing Configurations</h3>
+            <p>Clean out old state files to prevent package resolution conflicts.</p>
+            <div class="code-container">
+              <pre><code id="code-backup">mv ~/.config/nvim ~/.config/nvim.bak
+mv ~/.local/share/nvim ~/.local/share/nvim.bak
+mv ~/.local/state/nvim ~/.local/state/nvim.bak
+mv ~/.cache/nvim ~/.cache/nvim.bak</code></pre>
+              <button class="copy-btn" data-target="code-backup" aria-label="Copy backup commands">Copy</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="install-step">
+          <div class="step-num">02</div>
+          <div class="step-content">
+            <h3>Clone and Bootstrap</h3>
+            <p>Clone the Kaumudi repository directly. Lazy.nvim will auto-install all 42 plugins upon launching.</p>
+            <div class="code-container">
+              <pre><code id="code-clone">git clone https://github.com/gyan-cell/nvim ~/.config/nvim
+nvim</code></pre>
+              <button class="copy-btn" data-target="code-clone" aria-label="Copy clone commands">Copy</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Themes Showcase -->
+  <section class="section" id="themes">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Premium Colorways</h2>
+        <p class="section-desc">Press <code>&lt;leader&gt;tt</code> inside Neovim to select themes. Click below to preview theme variants live on the interactive mockup editor!</p>
+      </div>
+
+      <div class="themes-showcase">
+        <!-- Interactive Theme Selector Pills -->
+        <div class="theme-selector-pills">
+          <button class="theme-pill active" data-theme-name="rose-pine" data-bg="#1f1d2e" data-fg="#e0def4" data-accent="#9ccfd8">Rose Pine Moon</button>
+          <button class="theme-pill" data-theme-name="tokyonight" data-bg="#1a1b26" data-fg="#c0caf5" data-accent="#7aa2f7">Tokyo Night</button>
+          <button class="theme-pill" data-theme-name="catppuccin" data-bg="#1e1e2e" data-fg="#cdd6f4" data-accent="#cba6f7">Catppuccin Mocha</button>
+          <button class="theme-pill" data-theme-name="kanagawa" data-bg="#1f1f28" data-fg="#dcd7ba" data-accent="#957fb8">Kanagawa Dragon</button>
+          <button class="theme-pill" data-theme-name="gruvbox" data-bg="#282828" data-fg="#ebdbb2" data-accent="#d79921">Gruvbox Material</button>
+          <button class="theme-pill" data-theme-name="oxocarbon" data-bg="#161616" data-fg="#dde1e6" data-accent="#39b54a">Oxocarbon</button>
+        </div>
+
+        <!-- Editor Mockup Container -->
+        <div class="editor-mockup" id="preview-editor-window">
+          <!-- Title bar -->
+          <div class="editor-titlebar">
+            <div class="window-buttons">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="title-text">~/.config/nvim/lua/core/init.lua</div>
+          </div>
+          <!-- Workspace panel -->
+          <div class="editor-workspace">
+            <!-- Sidebar (NvimTree) -->
+            <div class="editor-sidebar">
+              <div class="sidebar-title">KAUMUDI</div>
+              <ul class="sidebar-tree">
+                <li class="active">lua/</li>
+                <li class="nested active">core/</li>
+                <li class="nested-file active">init.lua</li>
+                <li class="nested-file">options.lua</li>
+                <li class="nested-file">mappings.lua</li>
+                <li class="nested-file">plugins.lua</li>
+                <li>lazy-lock.json</li>
+              </ul>
+            </div>
+            <!-- Main Code Area -->
+            <div class="editor-codearea">
+              <pre><code><span class="ln">1</span><span class="comment">-- Load Kaumudi Neovim Core options</span>
+<span class="ln">2</span><span class="keyword">local</span> opt = vim.opt
+<span class="ln">3</span>
+<span class="ln">4</span><span class="comment">-- Transparency setup and layout options</span>
+<span class="ln">5</span>opt.termguicolors = <span class="literal">true</span>
+<span class="ln">6</span>opt.cursorline = <span class="literal">true</span>
+<span class="ln">7</span>opt.sessionoptions = <span class="string">"blank,buffers,curdir,localoptions"</span>
+<span class="ln">8</span>
+<span class="ln">9</span><span class="comment">-- Register native LSP servers via 0.12 API</span>
+<span class="ln">10</span>vim.lsp.config(<span class="string">"*"</span>, {
+<span class="ln">11</span>  capabilities = require(<span class="string">"cmp_nvim_lsp"</span>).default_capabilities()
+<span class="ln">12</span>})
+<span class="ln">13</span>
+<span class="ln">14</span><span class="comment">-- Toggle theme immediately with &lt;leader&gt;tt</span>
+<span class="ln">15</span>vim.keymap.set(<span class="string">"n"</span>, <span class="string">"&lt;leader&gt;tt"</span>, function()
+<span class="ln">16</span>  require(<span class="string">"core.themepicker"</span>).pick()
+<span class="ln">17</span><span class="keyword">end</span>, { desc = <span class="string">"Theme Picker"</span> })</code></pre>
+            </div>
+          </div>
+          <!-- Statusline -->
+          <div class="editor-statusline">
+            <span class="status-mode">NORMAL</span>
+            <span class="status-file">lua/core/init.lua</span>
+            <span class="status-info">utf-8 [unix] - lua</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Keybindings Hub -->
+  <section class="section section-alt" id="keybindings">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Keyboard Navigation Hub</h2>
+        <p class="section-desc">Engineered for pure speed. Filter categories or type to look up specific binds instantly.</p>
+      </div>
+
+      <!-- Controls -->
+      <div class="keybinds-controls">
+        <div class="category-buttons">
+          <button class="cat-btn active" data-category="all">All Binds</button>
+          <button class="cat-btn" data-category="core">Core</button>
+          <button class="cat-btn" data-category="lsp">LSP</button>
+          <button class="cat-btn" data-category="nav">Navigation</button>
+          <button class="cat-btn" data-category="splits">Splits</button>
+          <button class="cat-btn" data-category="session">Sessions</button>
+        </div>
+        <input type="text" id="keybinds-search" placeholder="Type key or action to search..." class="search-input" aria-label="Search keybindings">
+      </div>
+
+      <!-- Table -->
+      <div class="table-container">
+        <table class="keybinds-table">
+          <thead>
+            <tr>
+              <th>Key Shortcut</th>
+              <th>Action / Command</th>
+              <th>Category</th>
+            </tr>
+          </thead>
+          <tbody id="keybindings-list">
+            <!-- Populated via Javascript -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Creator Section -->
+  <section class="section" id="creator">
+    <div class="container">
+      <div class="creator-card">
+        <div class="creator-badge">MAINTAINER</div>
+        <div class="creator-profile-container">
+          <div class="creator-info">
+            <h2 class="creator-name">Gyanranjan Jha</h2>
+            <p class="creator-title">Neovim Enthusiast & Software Developer</p>
+            <p class="creator-bio">
+              A developer focused on developer efficiency and clean terminal UI designs. Building Kaumudi Vim was born out of a desire for a perfectly transparent, native API-centric configuration that behaves cleanly across complex multi-language environments without overhead.
+            </p>
+            <div class="creator-links">
+              <a href="https://github.com/gyan-cell" target="_blank" rel="noopener noreferrer" class="creator-link link-github">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                GitHub Profile
+              </a>
+              <a href="https://www.linkedin.com/in/gyanranjanjha/" target="_blank" rel="noopener noreferrer" class="creator-link link-linkedin">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                LinkedIn Connection
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-info">
+        <a href="#" class="nav-logo">
+          <span class="logo-symbol">/</span>
+          <span class="logo-text">Kaumudi<span class="accent">.vim</span></span>
+        </a>
+        <p>Built with clean code and custom Lua parameters. 100% open source.</p>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Gyanranjan Jha. Released under the MIT License.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
