@@ -37,7 +37,7 @@ Rose Pine Moon default · 6 premium themes · 42 plugins · pure Lua
 
 | Dashboard | Editor |
 |:-:|:-:|
-| ![Dashboard](images/demo0.jpeg) | ![Editor](images/demo1.jpeg) |
+| ![Dashboard](images/demo0.png) | ![Editor](images/demo1.png) |
 
 </div>
 
