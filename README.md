@@ -9,11 +9,11 @@
 ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═╝     ╚═╝ ╚═════╝ ╚═════╝ ╚═╝
 ```
 
-**कौमुदी** — *moonlight for your editor*
+**Kaumudi** - *moonlight for your editor*
 
 A fast, transparent, and opinionated Neovim config built on **Neovim 0.12+** native APIs.
 
-Rose Pine Moon default · 6 premium themes · 42 plugins · pure Lua
+Rose Pine Moon default | 6 premium themes | 42 plugins | pure Lua
 
 [![Neovim](https://img.shields.io/badge/Neovim-0.12%2B-57A143?style=flat-square&logo=neovim&logoColor=white)](https://neovim.io)
 [![Lua](https://img.shields.io/badge/Config-Lua-2C2D72?style=flat-square&logo=lua&logoColor=white)](https://lua.org)
@@ -23,29 +23,29 @@ Rose Pine Moon default · 6 premium themes · 42 plugins · pure Lua
 
 ---
 
-## ✨ What is Kaumudi?
+## What is Kaumudi?
 
-**Kaumudi** (कौमुदी) — Sanskrit for *moonlight* — is a personal Neovim configuration that prioritises transparency, speed, and modern Neovim APIs. Every window, panel, and popup is transparent so your terminal background shines through. It ships with 6 hand-tuned colorschemes, a Telescope-powered theme picker, and first-class LSP support for 11 languages — all managed through lazy.nvim.
+Kaumudi (कौमुदी) - Sanskrit for *moonlight* - is a personal Neovim configuration that prioritises transparency, speed, and modern Neovim APIs. Every window, panel, and popup is transparent so your terminal background shines through. It ships with 6 hand-tuned colorschemes, a Telescope-powered theme picker, and first-class LSP support for 11 languages - all managed through lazy.nvim.
 
 > **Philosophy:** Zero bloat. Every plugin earns its place. Native APIs over shims.
 
 ---
 
-## 📸 Screenshots
+## Screenshots
 
 <div align="center">
 
 | Dashboard | Editor |
 |:-:|:-:|
-| ![Dashboard](images/demo0.jpeg) | ![Editor](images/demo1.jpeg) |
+| ![Dashboard](images/demo0.png) | ![Editor](images/demo1.png) |
 
 </div>
 
 ---
 
-## 🚀 Installation
+## Installation
 
-**Prerequisites:** Neovim ≥ 0.12 · Node.js · npm · Git · a [Nerd Font](https://www.nerdfonts.com/)
+**Prerequisites:** Neovim >= 0.12, Node.js, npm, Git, and a Nerd Font.
 
 ```bash
 # 1. Back up your existing config (if any)
@@ -57,7 +57,7 @@ mv ~/.cache/nvim ~/.cache/nvim.bak
 # 2. Clone Kaumudi
 git clone https://github.com/gyan-cell/nvim ~/.config/nvim
 
-# 3. Launch — plugins install automatically on first run
+# 3. Launch - plugins install automatically on first run
 nvim
 ```
 
@@ -65,7 +65,7 @@ Lazy.nvim will bootstrap itself and install all 42 plugins. Treesitter parsers a
 
 ---
 
-## 🗂️ Structure
+## Structure
 
 ```
 ~/.config/nvim/
@@ -97,52 +97,52 @@ Lazy.nvim will bootstrap itself and install all 42 plugins. Treesitter parsers a
 │       ├── coediumAi.lua             #   Codeium AI completion
 │       ├── undotree.lua              #   undo history visualiser
 │       ├── image.lua                 #   image preview
-│       └── themepicker.lua           #   (stub — logic in core/)
+│       └── themepicker.lua           #   (stub - logic in core/)
 └── lazy-lock.json                    # Pinned plugin versions
 ```
 
 ---
 
-## 🌐 Language Support
+## Language Support
 
 | Language | LSP Server | Formatter | Linter |
 |:--|:--|:--|:--|
 | TypeScript / JavaScript | `ts_ls` | Prettier | eslint_d |
-| Rust | `rust_analyzer` | rustfmt | — |
+| Rust | `rust_analyzer` | rustfmt | - |
 | Python | `pyright` | isort + Black | pylint |
-| C / C++ | `clangd` | — | — |
-| Go | `gopls` | goimports + gofmt | — |
-| Lua | `lua_ls` | StyLua | — |
-| Java | `jdtls` | — | — |
-| HTML | `html` | Prettier | — |
-| CSS / Tailwind | `cssls` / `tailwindcss` | Prettier | — |
-| Prisma | `prismals` | Prettier | — |
+| C / C++ | `clangd` | - | - |
+| Go | `gopls` | goimports + gofmt | - |
+| Lua | `lua_ls` | StyLua | - |
+| Java | `jdtls` | - | - |
+| HTML | `html` | Prettier | - |
+| CSS / Tailwind | `cssls` / `tailwindcss` | Prettier | - |
+| Prisma | `prismals` | Prettier | - |
 | Svelte | (via `ts_ls`) | Prettier | eslint_d |
 
-All servers are auto-installed by **Mason** on first launch.
+All servers are auto-installed by Mason on first launch.
 
 ---
 
-## 🎨 Themes
+## Themes
 
-Six premium themes with full transparency — switch instantly with `<leader>tt`:
+Six premium themes with full transparency - switch instantly with `<leader>tt`:
 
 | Theme | Variants |
 |:--|:--|
-| 🌸 **Rose Pine** (default) | Moon · Main · Dawn |
-| 🌃 **Tokyo Night** | Night · Storm · Day · Moon |
-| ☕ **Catppuccin** | Mocha · Macchiato · Frappé · Latte |
-| 🐉 **Kanagawa** | Dragon · Wave · Lotus |
-| 🪵 **Gruvbox Material** | Hard |
-| 🔵 **Oxocarbon** | — |
+| Rose Pine (default) | Moon, Main, Dawn |
+| Tokyo Night | Night, Storm, Day, Moon |
+| Catppuccin | Mocha, Macchiato, Frappe, Latte |
+| Kanagawa | Dragon, Wave, Lotus |
+| Gruvbox Material | Hard |
+| Oxocarbon | - |
 
 Your selection persists across sessions (`~/.local/share/nvim/theme.txt`).
 
 ---
 
-## ⌨️ Key Bindings
+## Key Bindings
 
-Leader key is `Space`. Full reference: press `<leader>?` or `<F1>`.
+Leader key is Space. Full reference: press `<leader>?` or `<F1>`.
 
 ### Core
 
@@ -178,7 +178,7 @@ Leader key is `Space`. Full reference: press `<leader>?` or `<F1>`.
 |:--|:--|
 | `<leader>a` | Harpoon: add file |
 | `<C-e>` | Harpoon: toggle menu |
-| `<leader>h1`–`h7` | Harpoon: jump to file 1–7 |
+| `<leader>h1`-`h7` | Harpoon: jump to file 1-7 |
 | `<A-,>` / `<A-.>` | Previous / next buffer |
 | `<A-c>` | Close buffer |
 | `<C-p>` | Pick buffer |
@@ -202,32 +202,31 @@ Leader key is `Space`. Full reference: press `<leader>?` or `<F1>`.
 
 ---
 
-## 🔧 Technical Highlights
+## Technical Highlights
 
-- **Native LSP API** — uses `vim.lsp.config()` + `vim.lsp.enable()` (Neovim 0.11+ native, no deprecated shims)
-- **lazy.nvim** — declarative plugin management with lazy-loading, zero startup penalty
-- **Full transparency** — every highlight group patched for terminal-native transparency
-- **Persistent themes** — Telescope-powered picker, writes to disk, restores on startup
-- **Format on save** — via conform.nvim with LSP fallback
-- **Which-Key v3** — modern preset with group labels and keybinding discovery
-- **Treesitter textobjects** — `af`/`if` for functions, `ac`/`ic` for classes, `]f`/`[f` to jump
+- **Native LSP API** - uses `vim.lsp.config()` + `vim.lsp.enable()` (Neovim 0.11+ native, no deprecated shims)
+- **lazy.nvim** - declarative plugin management with lazy-loading, zero startup penalty
+- **Full transparency** - every highlight group patched for terminal-native transparency
+- **Persistent themes** - Telescope-powered picker, writes to disk, restores on startup
+- **Format on save** - via conform.nvim with LSP fallback
+- **Which-Key v3** - modern preset with group labels and keybinding discovery
+- **Treesitter textobjects** - `af`/`if` for functions, `ac`/`ic` for classes, `]f`/`[f` to jump
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions, issues, and feature requests are welcome. Feel free to open a PR.
 
-## 📜 License
+## License
 
-[MIT](LICENSE) © Gyanranjan Jha
+[MIT](LICENSE) (c) Gyanranjan Jha
 
-## 🙏 Acknowledgements
+## Acknowledgements
 
-Built on the shoulders of giants — special thanks to:
+Built on the shoulders of giants - special thanks to:
 
-- [ThePrimeagen](https://github.com/ThePrimeagen/) — Harpoon and the inspiration to go fast
-- [josean-dev](https://github.com/josean-dev) — clean Neovim config patterns
-- [folke](https://github.com/folke) — lazy.nvim, which-key, tokyonight, ts-comments
+- ThePrimeagen - Harpoon and the inspiration to go fast
+- josean-dev - clean Neovim config patterns
+- folke - lazy.nvim, which-key, tokyonight, ts-comments
 - The entire Neovim community
-# nvim
