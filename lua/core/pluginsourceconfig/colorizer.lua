@@ -1,0 +1,20 @@
+-- ============================================================
+-- HIGHLIGHT COLORS — inline color swatches in editor
+-- Replaces NvChad/nvim-colorizer.lua (less maintained)
+-- Supports: hex, rgb, hsl, oklch, Tailwind classes
+-- ============================================================
+
+return {
+  "brenoprata10/nvim-highlight-colors",
+  event = { "BufReadPre", "BufNewFile" },
+  opts = {
+    render      = "background",  -- show swatch as background color
+    enable_hex  = true,
+    enable_short_hex = true,
+    enable_rgb  = true,
+    enable_hsl  = true,
+    enable_tailwind = true,
+    enable_named_colors = true,
+    custom_colors = {},
+  },
+}
